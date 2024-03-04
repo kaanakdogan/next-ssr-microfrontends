@@ -10,12 +10,12 @@ const nextConfig = {
         destination: `/:path*`,
       },
       {
-        source: "/mfe",
-        destination: `http://localhost:3001/mfe`,
+        source: "/mfe1",
+        destination: `http://localhost:3001/mfe1`,
       },
       {
-        source: "/mfe/:path*",
-        destination: `http://localhost:3001/mfe/:path*`,
+        source: "/mfe1/:path*",
+        destination: `http://localhost:3001/mfe1/:path*`,
       },
     ];
   },
