@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic';
 import React, { useEffect, useState } from 'react'
 import { importModule } from "@/importModule";
 const inter = Inter({ subsets: ["latin"] });
-
+import Link from 'next/link'
 const Button = dynamic(() => import('mfe1/button'))
 
 export default function Home() {
@@ -18,9 +18,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
+      <main className={`${inter.className}`}>
         <div>Home Page</div>
-        {!!Button && <Button>Rendered in home</Button>}
+        <Button>Rendered in home</Button>
+        <Link href="/mfe1">Go to mfe1</Link>
       </main>
     </>
   );
