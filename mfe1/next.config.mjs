@@ -10,13 +10,7 @@ const nextConfig = {
       filename: 'static/chunks/remoteEntry.js',
       exposes: {
         './button': './src/components/button'
-      },
-      extraOptions: {
-        exposePages: true,
-        enableImageLoaderFix: true,
-        enableUrlLoaderFix: true,
-        automaticPageStitching: false,
-      },
+      }
     }));
 
     return config;
