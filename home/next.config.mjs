@@ -25,6 +25,9 @@ const nextConfig = {
       filename: 'static/chunks/remoteEntry.js',
       remotes: {
         mfe1: `mfe1@http://localhost:3001/mfe1/_next/static/${options.isServer ? 'ssr' : 'chunks'}/remoteEntry.js`
+      },
+      exposes: {
+        './context': './src/contexts/GlobalContext'
       }
     }));
 
